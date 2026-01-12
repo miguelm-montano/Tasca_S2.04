@@ -1,7 +1,7 @@
 1. ## 📊 Query Performance Report
 
 - 🧪 **Query**: `db.restaurants.find({}, { _id: 0 })`
-- ⏱️ **Execution time**: 1 ms
+- ⏱️ **Execution time**: 0 ms
 - 📚 **Documents returned**: 664
 - 🔍 **Documents examined**: 664
 - 🛠️ **Execution stage**: PROJECTION_SIMPLE
@@ -12,7 +12,7 @@
 2. ## 📊 Query Performance Report
 
 - 🧪 **Query**: `db.restaurants.find({}, {_id: 0, restaurant_id: 1, name: 1})`
-- ⏱️ **Execution time**: 0 ms
+- ⏱️ **Execution time**: 1 ms
 - 📚 **Documents returned**: 664
 - 🔍 **Documents examined**: 664
 - 🛠️ **Execution stage**: PROJECTION_SIMPLE
@@ -33,27 +33,24 @@
 
 4. ## 📊 Query Performance Report
 
-- 🧪 **Query**: `db.restaurants.find({}, {_id: 0, restaurant_id: 1, name: 1, borough: 1, zipcode: 1})`
+- 🧪 **Query**: `db.restaurants.find({}, {_id: 0, restaurant_id: 1, name: 1, borough: 1, "adress.zipcode": 1})`
 - ⏱️ **Execution time**: 0 ms
 - 📚 **Documents returned**: 664
 - 🔍 **Documents examined**: 664
-- 🛠️ **Execution stage**: PROJECTION_SIMPLE
+- 🛠️ **Execution stage**: PROJECTION_DEFAULT
 
 ## ✅ No significant issues detected
 
 
 5. ## 📊 Query Performance Report
 
-- 🧪 **Query**: `db.restaurants.find({"borough": "Bronx"})`
-- ⏱️ **Execution time**: 0 ms
+- 🧪 **Query**: `db.restaurants.find({borough: "Bronx"}, {_id: 0})`
+- ⏱️ **Execution time**: 1 ms
 - 📚 **Documents returned**: 54
 - 🔍 **Documents examined**: 664
-- 🛠️ **Execution stage**: COLLSCAN
+- 🛠️ **Execution stage**: PROJECTION_SIMPLE
 
 ## 🚨 Performance Issues
-
-### 🔥 Critical Issues
-- 🚨 Full collection scan detected where index could be used
 
 ### ⚠️ High Priority Issues
 - ⚠️ Examined 664 docs to return 54 (ratio 12.3:1)
