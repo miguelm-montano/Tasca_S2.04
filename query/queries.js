@@ -92,4 +92,4 @@ db.restaurants.find({}, { _id: 0 }).sort({ cuisine: 1, borough: -1 })
 
 
 // 32. Mostrar restaurant_id, name i grade i score de més de 80 però menys que 100.
-db.restaurants.find({ "grades.score": { $gt: 80, $lt: 100 }}, { _id: 0, restaurant_id: 1, name: 1, grades: 1 })
+db.restaurants.find({ "grades.score": { $gt: 80, $lt: 100 }}, { _id: 0, restaurant_id: 1, name: 1, grades: 1 }) 
