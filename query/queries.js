@@ -23,7 +23,7 @@ db.restaurants.find({borough: "Bronx"}, {_id: 0}).skip(5).limit(5)
 db.restaurants.find({grades: {$elemMatch: {score: { $gt: 90}}}}, {_id: 0})
 
 // 9. Trobar els restaurants amb un score de més de 80 però menys que 100.
-db.restaurants.find({grades: {$elemMatch: {score: { $gt: 80, $lt: 100}}}}, {_id: 0})
+db.restaurants.find({ "grades.score": { $gt: 80, $lt: 100}}, { "_id": 0 })
 
 // 10. Trobar els restaurants amb longitud menor que -95.754168.
 db.restaurants.find({"location.coordiantes.0": {$lt: -95.754168}}, {_id: 0})
@@ -71,13 +71,13 @@ db.restaurants.find({ "grades.1.grade": "A", "grades.1.score": 9, "grades.1.date
 
 
 // 25. Ordenar els noms dels restaurants en ordre ascendent, mostrant totes les columnes.
-db.restaurants.find().sort({ name: 1 })
+db.restaurants.find({}, { _id: 0 }).sort({ name: 1 })
 
 // 26. Ordenar els noms dels restaurants en ordre descendent, mostrant totes les columnes.
-db.restaurants.find().sort({ name: -1 })
+db.restaurants.find({}, { _id: 0 }).sort({ name: -1 })
 
 // 27. Ordenar cuisine ascendent i borough descendent.
-db.restaurants.find().sort({ cuisine: 1, borough: -1 })
+db.restaurants.find({}, { _id: 0 }).sort({ cuisine: 1, borough: -1 })
 
 // 28. Mostrar direccions que no contenen el carrer.
 
@@ -92,4 +92,4 @@ db.restaurants.find().sort({ cuisine: 1, borough: -1 })
 
 
 // 32. Mostrar restaurant_id, name i grade i score de més de 80 però menys que 100.
-db.restaurants.find({grades: {$elemMatch: {score: { $gt: 80, $lt: 100}}}}, {_id: 0, restaurant_id: 1, name: 1, grades: { $elemMatch: { score: { $gt: 80, $lt: 100} } }})
+db.restaurants.find({ "grades.score": { $gt: 80, $lt: 100 }}, { _id: 0, restaurant_id: 1, name: 1 })
