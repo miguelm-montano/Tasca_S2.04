@@ -47,7 +47,7 @@ db.restaurants.find({name: { $regex: /ces/}}, {_id: 0, restaurant_id: 1, name: 1
 db.restaurants.find({name: { $regex: /Reg/}}, {_id: 0, restaurant_id: 1, name: 1, borough: 1, cuisine: 1})
 
 // 17. Trobar restaurants del Bronx que preparen cuina americana o xinesa.
-
+ 
 
 // 18. Trobar restaurant_id, name, borough i cuisine per a Staten Island, Queens, Bronx o Brooklyn.
 
