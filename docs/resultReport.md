@@ -25,12 +25,7 @@
 - ✔️ OK - Query **[ 8 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 9 ]** Result does not match expected output.
-
-
-🔢 Different result lengths: 
-- **Expected:** 2
-- **Got:** 1
+- ✔️ OK - Query **[ 9 ]**
 
 ---
 - ✔️ OK - Query **[ 10 ]**
@@ -75,34 +70,19 @@
 - ✔️ OK - Query **[ 23 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 25 ]** Result does not match expected output.
-
-
-🧩 Mismatch at position 0:
-- **Expected:** {"address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
-- **Actual:** {"_id":"69669aa4c5dce2e75075eb51","address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
+- ✔️ OK - Query **[ 25 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 26 ]** Result does not match expected output.
-
-
-🧩 Mismatch at position 0:
-- **Expected:** {"address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
-- **Actual:** {"_id":"69669aa4c5dce2e75075eb51","address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
+- ✔️ OK - Query **[ 26 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 27 ]** Result does not match expected output.
-
-
-🧩 Mismatch at position 0:
-- **Expected:** {"address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
-- **Actual:** {"_id":"69669aa4c5dce2e75075eb51","address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
+- ✔️ OK - Query **[ 27 ]**
 
 ---
 - ❌ MISMATCH - Query **[ 32 ]** Result does not match expected output.
 
 
-🔢 Different result lengths: 
-- **Expected:** 2
-- **Got:** 1
+🧩 Mismatch at position 0:
+- **Expected:** {"grades":[{},{},{},{},{},{}],"name":"Murals On 54/Randolphs'S","restaurant_id":40372466}
+- **Actual:** {"name":"Murals On 54/Randolphs'S","restaurant_id":40372466}
 
