@@ -10,12 +10,7 @@
 - ✔️ OK - Query **[ 3 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 4 ]** Result does not match expected output.
-
-
-🧩 Mismatch at position 0:
-- **Expected:** {"address":{},"borough":"Bronx","name":"Morris Park Bake Shop","restaurant_id":30075445}
-- **Actual:** {"borough":"Bronx","name":"Morris Park Bake Shop","restaurant_id":30075445}
+- ✔️ OK - Query **[ 4 ]**
 
 ---
 - ✔️ OK - Query **[ 5 ]**
@@ -27,12 +22,7 @@
 - ✔️ OK - Query **[ 7 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 8 ]** Result does not match expected output.
-
-
-🔢 Different result lengths: 
-- **Expected:** 2
-- **Got:** 664
+- ✔️ OK - Query **[ 8 ]**
 
 ---
 - ❌ MISMATCH - Query **[ 9 ]** Result does not match expected output.
@@ -40,15 +30,10 @@
 
 🔢 Different result lengths: 
 - **Expected:** 2
-- **Got:** 0
+- **Got:** 1
 
 ---
-- ❌ MISMATCH - Query **[ 10 ]** Result does not match expected output.
-
-
-🔢 Different result lengths: 
-- **Expected:** 0
-- **Got:** 664
+- ✔️ OK - Query **[ 10 ]**
 
 ---
 - ✔️ OK - Query **[ 11 ]**
@@ -67,4 +52,24 @@
 
 ---
 - ✔️ OK - Query **[ 16 ]**
+
+---
+- ✔️ OK - Query **[ 17 ]**
+
+---
+- ✔️ OK - Query **[ 18 ]**
+
+---
+- ✔️ OK - Query **[ 19 ]**
+
+---
+- ✔️ OK - Query **[ 20 ]**
+
+---
+- ❌ MISMATCH - Query **[ 21 ]** Result does not match expected output.
+
+
+🧩 Mismatch at position 0:
+- **Expected:** {"address":{},"borough":"Brooklyn","cuisine":"Delicatessen","grades":[{},{},{},{},{},{}],"location":{},"name":"Wilken'S Fine Food","restaurant_id":40356483}
+- **Actual:** {"_id":"696668f19730f37958db3ffa","address":{},"borough":"Brooklyn","cuisine":"Delicatessen","grades":[{},{},{},{},{},{}],"location":{},"name":"Wilken'S Fine Food","restaurant_id":40356483}
 
