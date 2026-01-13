@@ -30,9 +30,9 @@
 - ❌ MISMATCH - Query **[ 8 ]** Result does not match expected output.
 
 
-🧩 Mismatch at position 0:
-- **Expected:** {"address":{},"borough":"Manhattan","cuisine":"American","grades":[{},{},{},{},{},{}],"location":{},"name":"Murals On 54/Randolphs'S","restaurant_id":40372466}
-- **Actual:** {"_id":"69662ba9ef3174b2b83e035f","address":{},"borough":"Manhattan","cuisine":"American","grades":[{},{},{},{},{},{}],"location":{},"name":"Murals On 54/Randolphs'S","restaurant_id":40372466}
+🔢 Different result lengths: 
+- **Expected:** 2
+- **Got:** 664
 
 ---
 - ❌ MISMATCH - Query **[ 9 ]** Result does not match expected output.
@@ -40,5 +40,31 @@
 
 🔢 Different result lengths: 
 - **Expected:** 2
-- **Got:** 1
+- **Got:** 0
+
+---
+- ❌ MISMATCH - Query **[ 10 ]** Result does not match expected output.
+
+
+🔢 Different result lengths: 
+- **Expected:** 0
+- **Got:** 664
+
+---
+- ✔️ OK - Query **[ 11 ]**
+
+---
+- ✔️ OK - Query **[ 12 ]**
+
+---
+- ✔️ OK - Query **[ 13 ]**
+
+---
+- ✔️ OK - Query **[ 14 ]**
+
+---
+- ✔️ OK - Query **[ 15 ]**
+
+---
+- ✔️ OK - Query **[ 16 ]**
 
