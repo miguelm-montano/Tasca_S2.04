@@ -66,10 +66,43 @@
 - ✔️ OK - Query **[ 20 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 21 ]** Result does not match expected output.
+- ✔️ OK - Query **[ 21 ]**
+
+---
+- ✔️ OK - Query **[ 22 ]**
+
+---
+- ✔️ OK - Query **[ 23 ]**
+
+---
+- ❌ MISMATCH - Query **[ 25 ]** Result does not match expected output.
 
 
 🧩 Mismatch at position 0:
-- **Expected:** {"address":{},"borough":"Brooklyn","cuisine":"Delicatessen","grades":[{},{},{},{},{},{}],"location":{},"name":"Wilken'S Fine Food","restaurant_id":40356483}
-- **Actual:** {"_id":"696668f19730f37958db3ffa","address":{},"borough":"Brooklyn","cuisine":"Delicatessen","grades":[{},{},{},{},{},{}],"location":{},"name":"Wilken'S Fine Food","restaurant_id":40356483}
+- **Expected:** {"address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
+- **Actual:** {"_id":"69669aa4c5dce2e75075eb51","address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
+
+---
+- ❌ MISMATCH - Query **[ 26 ]** Result does not match expected output.
+
+
+🧩 Mismatch at position 0:
+- **Expected:** {"address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
+- **Actual:** {"_id":"69669aa4c5dce2e75075eb51","address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
+
+---
+- ❌ MISMATCH - Query **[ 27 ]** Result does not match expected output.
+
+
+🧩 Mismatch at position 0:
+- **Expected:** {"address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
+- **Actual:** {"_id":"69669aa4c5dce2e75075eb51","address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
+
+---
+- ❌ MISMATCH - Query **[ 32 ]** Result does not match expected output.
+
+
+🔢 Different result lengths: 
+- **Expected:** 2
+- **Got:** 1
 
