@@ -79,10 +79,5 @@
 - ✔️ OK - Query **[ 27 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 32 ]** Result does not match expected output.
-
-
-🧩 Mismatch at position 0:
-- **Expected:** {"grades":[{},{},{},{},{},{}],"name":"Murals On 54/Randolphs'S","restaurant_id":40372466}
-- **Actual:** {"name":"Murals On 54/Randolphs'S","restaurant_id":40372466}
+- ✔️ OK - Query **[ 32 ]**
 
